@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* flex布局 */
+/* float width 25%布局  */
+.average-layout {
+  height: 100%;
+  width: 100%;
+}
+
+.average-layout .one, .average-layout .two, .average-layout .three, .average-layout .four {
+  height: 100%;
+  float: left;
+  width: 25%;
+}
+
+.one {
+  background-color: #f66;
+}
+
+.two {
+  background-color: #66f;
+}
+
+.three {
+  background-color: #f90;
+}
+
+.four {
+  background-color: #09f;
+}
+/*# sourceMappingURL=index.css.map */

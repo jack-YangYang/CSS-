@@ -1,0 +1,111 @@
+.hover-tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin: 30px auto;
+  width: 200px;
+}
+
+.hover-tips li {
+  position: relative;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-clip: content-box;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.hover-tips li::before, .hover-tips li::after {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(0, -30px, 0);
+          transform: translate3d(0, -30px, 0);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.hover-tips li::before {
+  margin: 0 0 12px -35px;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  content: attr(data-name);
+}
+
+.hover-tips li::after {
+  margin-left: -6px;
+  border: 6px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.5);
+  width: 0;
+  height: 0;
+  content: "";
+}
+
+.hover-tips li:nth-child(1) {
+  background-color: #f66;
+}
+
+.hover-tips li:nth-child(1):hover {
+  border-color: #f66;
+}
+
+.hover-tips li:nth-child(2) {
+  background-color: #66f;
+}
+
+.hover-tips li:nth-child(2):hover {
+  border-color: #66f;
+}
+
+.hover-tips li:nth-child(3) {
+  background-color: #f90;
+}
+
+.hover-tips li:nth-child(3):hover {
+  border-color: #f90;
+}
+
+.hover-tips li:nth-child(4) {
+  background-color: #09f;
+}
+
+.hover-tips li:nth-child(4):hover {
+  border-color: #09f;
+}
+
+.hover-tips li:nth-child(5) {
+  background-color: #9c3;
+}
+
+.hover-tips li:nth-child(5):hover {
+  border-color: #9c3;
+}
+
+.hover-tips li:nth-child(6) {
+  background-color: #3c9;
+}
+
+.hover-tips li:nth-child(6):hover {
+  border-color: #3c9;
+}
+
+.hover-tips li:hover::before, .hover-tips li:hover::after {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+/*# sourceMappingURL=index.css.map */

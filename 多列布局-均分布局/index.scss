@@ -1,0 +1,33 @@
+/* flex布局 */
+// .average-layout {
+//     display: flex;
+//     height: 100%;
+//     width: 100%;
+//     .one, .two, .three, .four {
+//         height: 100%;
+//         flex: 1;
+//     }
+// }
+
+/* float width 25%布局  */
+.average-layout {
+    height: 100%;
+    width: 100%;
+    .one, .two, .three, .four {
+        height: 100%;
+        float: left;
+        width: 25%;
+    }
+}
+.one {
+    background-color: #f66;
+}
+.two {
+    background-color: #66f;
+}
+.three {
+    background-color: #f90;
+}
+.four {
+    background-color: #09f;
+}

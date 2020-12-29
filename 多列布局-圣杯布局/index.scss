@@ -1,0 +1,56 @@
+/* 定位实现 */
+.three-column-layout {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .left,
+    .right,
+    .middle {
+        height: 100%;
+    }
+    .left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        background-color: #f66;
+    }
+    .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+        background-color: #f66;
+    }
+    .middle {
+        position: absolute;
+        left: 300px;
+        right: 300px;
+        top: 0;
+        background-color: #3c9;
+    }
+}
+/* 浮动实现 */
+// .three-column-layout {
+//     width: 100%;
+//     height: 100%;
+//     .left, 
+//     .middle,
+//     .right {
+//         height: 100%;
+//     }
+//     .left {
+//         width: 300px;
+//         float: left;
+//         background-color: #f66;
+//     }
+//     .right {
+//         width: 300px;
+//         float: right;
+//         background-color: #f66;
+//     }
+//     .middle {
+//         margin: 0 300px;
+//         background-color: #3c9;
+//     }
+// }

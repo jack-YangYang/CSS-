@@ -1,0 +1,75 @@
+@charset "UTF-8";
+div {
+  margin: 10px 0;
+}
+
+/*
+    绘制一个边框分别为四种颜色的正方形。
+    然后将宽高设置为0
+    尝试将右边框颜色声明为透明，会发现右边框隐藏起来
+ */
+/* 然后将宽高设置为0 */
+/* 尝试将右边框颜色声明为透明，会发现右边框隐藏起来。*/
+/* 简化代码 */
+.triangle {
+  border: 50px solid;
+  border-left-color: #f66;
+  border-top-color: #3c9;
+  border-bottom-color: #66f;
+  border-right-color: #09f;
+  width: 0;
+  height: 0;
+}
+
+.triangle-two {
+  border: 50px solid transparent;
+  border-top-color: #f66;
+  border-right-color: #f66;
+  width: 0;
+  height: 0;
+}
+
+.triangle-three {
+  border: 50px solid transparent;
+  border-bottom-color: #f66;
+  border-right-color: #f66;
+  width: 0;
+  height: 0;
+}
+
+.triangle-four {
+  border: 50px solid transparent;
+  border-left-color: #f66;
+  border-bottom-color: #f66;
+  width: 0;
+  height: 0;
+}
+
+.triangle-five {
+  border: 50px solid transparent;
+  border-top-color: #f66;
+  width: 0;
+  height: 0;
+}
+
+.triangle-six {
+  border: 50px solid transparent;
+  border-left-color: #f66;
+  width: 0;
+  height: 0;
+}
+
+.triangle-seven {
+  border: 50px solid transparent;
+  border-right-color: #f66;
+  width: 0;
+  height: 0;
+}
+
+.triangle-eight {
+  border: 50px solid transparent;
+  border-bottom-color: #f66;
+  width: 0;
+  height: 0;
+}
+/*# sourceMappingURL=index.css.map */

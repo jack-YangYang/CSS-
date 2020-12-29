@@ -1,0 +1,47 @@
+/* float+ovoverflow  */
+// .three-column-layout {
+//     height: 100%;
+//     width: 100%;
+//     .left,
+//     .right,
+//     .center {
+//         height: 100%;
+//     }
+//     .left {
+//         width: 100px;
+//         float: left;
+//         background-color: #f66;
+//     }
+//     .center {
+//         float: left;
+//         width: 200px;
+//         background-color: #3c9;
+//     }
+//     .right {
+//         overflow: hidden;
+//         background-color: #f66;
+//     }
+// }
+/* fle布局 */
+.three-column-layout {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .left,
+    .right,
+    .center {
+        height: 100%;
+    }
+    .left {
+        width: 100px;
+        background-color: #f66;
+    }
+    .center {
+        width: 200px;
+        background-color: #3c9;
+    }
+    .right {
+       flex: 1;
+        background-color: #f66;
+    }
+}

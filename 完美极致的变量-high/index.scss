@@ -1,0 +1,46 @@
+.strip-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    li {
+        --time: calc((var(--line-index) -1 ) * 200ms);
+        border-radius: 3px;
+        width: 6px;
+        height: 30px;
+        background-color: #f66;
+        animation: beat 1.5s ease-in-out var(--time) infinite;
+        & + li {
+            margin-left: 5px;
+        }
+    }
+}
+@keyframes beat {
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(.5);
+    }
+}
+/* 可用于生成一个圆形 */
+
+// .gradient-circular {
+//     position: relative;
+//     width: 4px;
+//     height: 200px;
+//     li {
+//         --Θ: calc(var(--line-index) / var(--line-count) * 1turn);
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: #3c9;
+//         filter: hue-rotate(var(--Θ));
+//         transform-origin: center bottom;
+//         transform: rotate(var(--Θ));
+//     }
+// }
